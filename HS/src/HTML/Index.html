@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/CSS/reset.css">
+    <link rel="stylesheet" href="/src/CSS/estilo.css">
+    <link rel="stylesheet" href="/src/CSS/scroolbar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+    <title>HermeSport</title>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <img class="logo1" src="/img/logo1.png" alt="Logo">
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <div class="nav-menu-container">
+            <img class="logo2" src="/img/logo2.png" alt="Logo Secundária"> <!-- Logo alinhada à esquerda -->
+            <ul id="navMenu">
+                <li class="nav-item"><a href="/src/HTML/Unidades.html">Unidades</a></li>
+                <li class="nav-item"><a href="/src/HTML/Produtos.html">Produtos</a></li>
+                <li class="nav-item"><a href="/src/HTML/Carrinho.html">Carrinho</a></li>
+                <li class="nav-item"><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Corpo do site -->
+    <div class="content-wrapper">
+        <main>
+            <div class="slides-container">
+                <div class="slides fade">
+                    <img src="/img/banner1.png" alt="Banner 1">
+                </div>
+                <div class="slides fade">
+                    <img src="/img/banner2.png" alt="Banner 2">
+                </div>
+                <div class="slides fade">
+                    <img src="/img/banner3.png" alt="Banner 3">
+                </div>
+                <div class="slides fade">
+                    <img src="/img/banner4.png" alt="Banner 4">
+                </div>
+
+                <!-- Botões -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Pontos de navegação -->
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+        </main>
+
+        <aside>
+            <h2>Localização</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1725133802936!6m8!1m7!1sJDPHdrcMEfsKT7jW0-WdeQ!2m2!1d-25.52917403424425!2d-48.51934607922977!3f139.09943845991688!4f-4.373112613536122!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </aside>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2024 HermeSport. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="/src/JAVASCRIPT/carrossel.js"></script>
+
+</body>
+</html>
