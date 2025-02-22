@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="img/logo1.png" type="image/x-icon">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>HermeSport Menu</title>
+</head>
+<body>
+    <header>
+        <img src="img/logo1.png" alt="lugo 1">
+    </header>
+    <nav>
+        <img src="img/logo2.png" alt="logo 2">
+        <ul id="menu">
+            <button type="submit" onclick="fecharMenu()" id="btn2" class="btn2"><img src="/img/close.png" alt="fechar menu"></button>
+            <li><a href="#">Unidades</a></li>
+            <li><a href="sobre_nos.html">Sobre nós</a></li>
+            <li><a href="#">Loja</a></li>
+        </ul>
+
+        <a href="#" id="perfil">
+        <ion-icon name="person-circle"></ion-icon>
+        </a>
+
+        <button type="submit" onclick="abrirMenu()" id="btn" class="btn"><img src="/img/open.png" alt="abrir menu"></button>
+    </nav>
+
+    <!-- Carrossel de imagens -->
+    <div class="carrossel-container" id="carrossel">
+        <div class="carrossel" id="carrossel">
+            <img src="/img/banner1.png" alt="Imagem 1" class="imagem" loading="eager">
+            <img src="/img/banner2.png" alt="Imagem 2" class="imagem" loading="lazy">
+            <img src="/img/banner3.png" alt="Imagem 3" class="imagem" loading="lazy">
+            <img src="/img/banner4.png" alt="imagem 4" class="imagem" loading="lazy">
+            <img src="/img/banner5.png" alt="imagem 4" class="imagem" loading="lazy">
+        </div>
+        <button class="prev" onclick="mudarImagem(-1)">&#10094;</button>
+        <button class="next" onclick="mudarImagem(1)">&#10095;</button>
+    </div>
+
+    <footer>
+        <div class="copy">
+        &copy; Copyright 2025. HermeSport.com
+        </div>
+    </footer>
+
+    <script src="/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+header{
+    margin-left: -8px;
+    margin-right: -8px;
+    height: 125px;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+}
+
+header img{
+    margin: auto;
+    height: 100%;
+}
+
+nav{
+    height: 80px;
+    margin-left: -8px;
+    margin-right: -8px;
+    display: flex;
+    background-color: rgb(255, 102, 0);
+}
+
+nav img{
+    height: 100%;
+    padding-left: 20px;
+}
+
+nav ul{
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 10px 6px 10px rgba(0, 0, 0, 0.432);
+    transition: all 1s;
+}
+
+nav ul li a:hover{
+    font-weight: bolder;
+    border-bottom: 2px solid white;
+    font-size: larger;
+}
+
+nav button{
+  display: none;
+  height: 80px;
+  width: 80px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav .btn img{
+  margin-left: -20px;
+}
+
+ion-icon{
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    color: white;
+    margin: auto;
+    transition: all 1s;
+}
+
+ion-icon:hover{
+    color: rgb(0, 0, 0);
+    transform: scale(1.3);
+}
+
+
+
+.carrossel-container {
+    position: relative;
+    max-width: 50%; /* Ajusta a largura ao tamanho da tela */
+    margin: auto;
+    margin-top: 50px;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 10px 10px 0px 0px #2e2e2e56;
+  }
+  
+  .carrossel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .imagem {
+    width: 100%;
+    height: auto; /* Ajuste de altura proporcional */
+    object-fit: cover;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10;
+  }
+  
+  .prev {
+    left: 0px;
+    transition: all 5s;
+  }
+  
+  .prev:hover{
+    background-color: #ff7300;
+    border-radius: 0px 10px 10px 0px;
+  }
+  
+  .next {
+    right: 0px;
+    transition: all 5s;
+  }
+  
+  .next:hover{
+    background-color: #ff7300;
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  footer{
+    background-color: black;
+    color: aliceblue;
+    margin-right: -8px;
+    margin-left: -8px;
+    margin-top: 40px;
+    margin-bottom: -8px;
+    height: 75px;
+    display: flex;
+  }
+
+  .copy{
+    margin: auto;
+    font-weight: bolder;
+  }
+
+  @media (max-width: 1000px){
+    nav button{
+      display: none;
+    }
+
+    .carrossel-container {
+      position: relative;
+      max-width: 80%; /* Ajusta a largura ao tamanho da tela */
+      overflow: hidden;
+      border-radius: 30px;
+      box-shadow: 5px 5px 0px 5px #2e2e2e56;
+    }
+
+    footer{
+      margin-top: 100px;
+      margin-bottom: -8px;
+    }
+  }
+
+  @media (max-width: 600px){
+    nav ul{
+      position: fixed;
+      top: 100px;
+      background-color: rgb(255, 255, 255);
+      height: calc(100vh - 100px);
+      width: 100%;
+      height: 600px;
+      flex-direction: column;
+      align-items: center;
+      transition: right 1.0s linear;
+      right: -110%;
+    }
+
+    nav ul li a{
+      color: black;
+      transition: all 1s;
+    }
+
+    nav ul li a:hover{
+      border-bottom: 2px solid black;
+      font-weight: bolder;
+      font-size: larger;
+    }
+
+    ion-icon{
+      display: flex;
+      padding-left: 300px;
+      width: 100px;
+      padding-left: 10px;
+      margin-left: 370px;
+    }
+
+    ion-icon:hover{
+      transform: scale(0.9);
+    }
+
+    nav button{
+      display: flex;
+      margin-top: -25%;
+      padding-left: 300px;
+      justify-content: center;
+      padding-left: 50px;
+      margin-left: 350px;
+      height: 120px;
+      transition: all 1s;
+    }
+
+    nav .btn:hover{
+      transform: translate(-10px, -70px);
+    }
+
+    nav .btn2{
+      display: none;
+      width: 100px;
+      margin-right: 410px;
+      margin-top: -250px;
+      transition: transform 1s;
+    }
+
+    nav .btn2:hover{
+      transform: translate(-10px, -70px);
+    }
+
+    .carrossel-container {
+      position: relative;
+      max-width: 100%; /* Ajusta a largura ao tamanho da tela */
+      overflow: hidden;
+      border-radius: 0%;
+      box-shadow: 0px 0px 0px 0px #2e2e2e56
+    }
+
+    footer{
+      margin-top: 59px;
+      margin-bottom: -16px;
+    }
+  }
+
+  @media (max-width: 550px){
+    ion-icon{
+      display: flex;
+      padding-left: 300px;
+      width: 100px;
+      padding-left: 10px;
+      margin-left: 330px;
+    }
+  }
+
+  @media (max-width: 500px){
+      ion-icon{
+        display: flex;
+        padding-left: 300px;
+        width: 100px;
+        padding-left: 10px;
+        margin-left: 280px;
+      }
+
+      nav button{
+        display: flex;
+        margin-top: -31%;
+        padding-left: 300px;
+        justify-content: center;
+        padding-left: 50px;
+        margin-left: 300px;
+        height: 120px;
+        transition: all 1s;
+      }
+
+      nav .btn2{
+        display: none;
+        width: 100px;
+        margin-right: 360px;
+        margin-top: -230px;
+        transition: transform 1s;
+      }
+    }
