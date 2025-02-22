@@ -2,6 +2,7 @@ body{
     background-image: linear-gradient(10deg, #03624c, #030f0f, #00df82);
     height: 100vh;
     height: auto;
+    overflowX: hidden;
 }
 
 header{
@@ -486,11 +487,11 @@ nav .btn img{
 
     nav button{
         display: flex;
-        margin-top: -4%;
+        margin-top: -5%;
         padding-left: 300px;
         justify-content: center;
         padding-left: 50px;
-        margin-left: -200px;
+        margin-left: -250px;
         height: 120px;
         transition: all 1s;
     }
