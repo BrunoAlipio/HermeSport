@@ -1,8 +1,8 @@
 body{
-    background-image: linear-gradient(10deg, #03624c, #030f0f, #00df82);
+    background-image: linear-gradient(10deg,      #03624c, #030f0f, #00df82);
     height: 100vh;
     height: auto;
-    overflowX: hidden;
+    overflow-x: hidden;
 }
 
 header{
@@ -477,21 +477,23 @@ nav .btn img{
 }
 
 @media (max-width: 500px){
-    ion-icon{
+    body{
+        overflow-x: hidden;
+    }
+    
+    .perfil{
         display: flex;
-        padding-left: 300px;
         width: 100px;
-        padding-left: 10px;
-        margin-left: 280px;
+        margin-left: 180px;
     }
 
     nav button{
         display: flex;
-        margin-top: -5%;
+        margin-top: -7%;
         padding-left: 300px;
         justify-content: center;
         padding-left: 50px;
-        margin-left: -250px;
+        margin-left: -200px;
         height: 120px;
         transition: all 1s;
     }
@@ -503,5 +505,58 @@ nav .btn img{
         margin-top: -80px;
         margin-bottom: -50px;
         transition: transform 1s;
+    }
+    
+    .quadrante1{
+        margin-left: auto;
+        height: 1000px;
+    }
+    
+    .quadrante2{
+        margin-right: auto;
+        margin-top: 750px;
+        height: 1000px;
+    }
+    
+    .contatos{
+        margin-top: 700px;
+    }
+    
+    .contatos h1{
+        width: 200px;
+    }
+    
+    .ctts{
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        margin-right: 200px;
+    }
+
+    .ctts .ctt{
+        margin: 0px;
+    }
+    
+    .ctt .whats{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .ctt .linkedin{
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+    }
+    
+    .ctt .face{
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+    }
+    
+    .ctt .insta{
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
     }
 }

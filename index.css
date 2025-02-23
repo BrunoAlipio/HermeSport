@@ -246,6 +246,46 @@ ion-icon:hover{
   }
 
   @media (max-width: 550px){
+  header{
+      background: black;
+  }
+  }
+  .perfil{
+    display: flex;
+    padding-left: 10px;
+  }
+
+    ion-icon{
+      display: flex;
+      width: 80px;
+      margin-left: 200px;
+    }
+    
+    nav button{
+     height: 150px;
+     width: 150px;
+     background-color: transparent;
+     cursor: pointer;
+     margin-left: 180px;
+     margin-top: -190px;
+}
+
+nav .btn2{
+      display: none;
+      width: 100px;
+      margin-right: 240px;
+      margin-top: -250px;
+      transition: transform 1s;
+    }
+
+footer{
+      margin-top: 160px;
+    }
+    
+    }
+
+  @media (max-width: 500px){
+
     ion-icon{
       display: flex;
       padding-left: 300px;
@@ -253,16 +293,6 @@ ion-icon:hover{
       padding-left: 10px;
       margin-left: 330px;
     }
-  }
-
-  @media (max-width: 500px){
-      ion-icon{
-        display: flex;
-        padding-left: 300px;
-        width: 100px;
-        padding-left: 10px;
-        margin-left: 280px;
-      }
 
       nav button{
         display: flex;
